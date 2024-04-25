@@ -7,7 +7,9 @@ class Solution {
     public int[] element_search(int[] nums, int target) {
         
         int[] result = {-1, -1};
+        //intialize two pointers
     int left = 0, right = nums.length - 1;
+        //using binary search
     while (left <= right) {
         int mid = left + (right - left) / 2;
         if (nums[mid] == target) {
